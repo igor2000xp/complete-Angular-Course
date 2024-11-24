@@ -1,0 +1,29 @@
+<div class="col-xs-12">
+  <h2>{{ title }}:</h2>
+
+  <app-car
+    *ngFor="let carValue of carValues;let i=index"
+    [carElements]="carValue"
+    [attr.data-clown]="i"
+    #carComponent
+  ></app-car>
+
+
+  <div
+    #anotherDiv
+  >
+    Hello this is another div
+  </div>
+
+  <hr/>
+
+  <app-add
+    (cSub)="carWasSubmitted($event)"
+    (setTitle)="getTitle($event)"
+  >
+    <!-- <div #contentApp>
+      <span>Hello i am a span -- {{ contentValue }}</span>
+    </div> -->
+  </app-add>
+
+</div>

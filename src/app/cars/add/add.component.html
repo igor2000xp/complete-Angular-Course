@@ -1,0 +1,42 @@
+<div class="row">
+  <div>
+
+    <!-- <input type="text" class="form-control" #idRef> -->
+
+    <label>Add a name</label>
+    <input type="text" class="form-control" [(ngModel)]="userData.name">
+
+    <label>Add a model</label>
+    <input type="text" class="form-control" [(ngModel)]="userData.model">
+
+    <label>Add a color</label>
+    <input type="text" class="form-control" [(ngModel)]="userData.color">
+
+    <hr>
+
+    <button
+      class="btn btn-primary"
+      (click)="onSubmitCar()"
+    >
+      Add a car
+    </button>
+
+    <div>{{ userData.name }}</div>
+    <div>{{ userData.model }}</div>
+    <div>{{ userData.color }}</div>
+
+    <ng-content></ng-content>
+
+  </div>
+
+
+  <!-- <div
+    (click)="alertOnClick($event)"
+    (mouseenter)="onMouserEnter()"
+    (mouseleave)="onMouseLeave()"
+  >Click me !!</div>
+<hr/>
+  <div>
+    {{ status }}
+  </div> -->
+</div>

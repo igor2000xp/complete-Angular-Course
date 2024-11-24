@@ -1,0 +1,175 @@
+<header>
+  <app-header></app-header>
+</header>
+
+<div class="container">
+  <div class="row">
+    <!-- <app-cars></app-cars> -->
+    <!-- <div app-cars></div> -->
+    <!-- <div class="app-cars"></div> -->
+
+    <div *appCarousel="let item from items autoplay 'on' delay 1000; let ctrl = controller">
+        <div>
+          {{ item }}
+        </div>
+        <button (click)="ctrl.prev()">Previous</button>
+        <button (click)="ctrl.next()">Next</button>
+    </div>
+
+
+  </div>
+
+  <!-- <hr/>
+
+  <div class="row" *appSimpleStr1="true">
+    <div>
+      Hello, structural directive
+    </div>
+  </div> -->
+
+
+  <!-- <div class="row">
+    <div
+      appSimpleAttr3
+      [color]="'red'"
+      [disabled]="true"
+      [clickable]="true"
+    >Some content</div>
+  </div>
+
+  <div class="row">
+    <div
+      appSimpleAttr3
+      [color]="'blue'"
+      [disabled]="false"
+      [clickable]="false"
+    >Some content 2</div>
+  </div> -->
+
+
+  <!-- <ul
+    *ngFor="let coofee of coffees"
+    [ngSwitch]="coofee.available"
+  >
+    <li *ngSwitchCase="'yes'">
+      {{ coofee.style }}
+    </li>
+    <li
+      *ngSwitchCase="'no'"
+      [ngStyle]="{color:'red'}"
+    >
+        {{ coofee.style }} - Not available
+    </li>
+  </ul> -->
+
+
+
+<!--
+  <div class="row">
+    <div [ngSwitch]="3">
+      <div *ngSwitchCase="3">
+        Yes
+      </div>
+      <div *ngSwitchCase="5">
+        no
+      </div>
+      <div *ngSwitchDefault>
+        Default
+      </div>
+    </div>
+  </div> -->
+
+
+  <!-- <div
+    *ngFor="let item of list"
+    class="row"
+  >
+    {{ item.position }}
+  </div> -->
+
+
+<!--
+  <div class="row" [class]="'some-other-class'">
+    some content !!
+  </div>
+  <hr/>
+  <div class="row" [ngClass]="{'some-class':true,'some-class2': true}">
+      some content 2!!
+  </div>
+  <hr/>
+  <div class="row" [ngClass]="{'ternary-class': show ? true : false}">
+      some content 3!!
+  </div>
+  <hr/>
+  <div
+    class="row"
+    [class.last-class]="true"
+    [class.middle-class]="true"
+    [class.first-class]="show ? true : false"
+
+    >
+      some content 4!!
+  </div>
+  <hr/>
+  <div class="row" [ngClass]="classes">
+      some content 5!!
+  </div> -->
+
+  <!-- <div class="row" [ngStyle]="{'color':'green'}">
+    I am color green
+  </div>
+  <hr/>
+  <div class="row" [ngStyle]="{'color': show ? 'blue': 'red'}">
+      I am color blue / red
+  </div>
+  <hr/>
+  <div class="row" [ngStyle]="{color: getColor()}">
+      I am color yellow
+  </div>
+  <hr/>
+  <div class="row" [style.color]="'purple'">
+      I am color purple
+  </div>
+  <hr/>
+  <div class="row" [ngStyle]="{'font-size.pt':24,'color':'red'}">
+      I am BIG
+  </div>
+  <hr/>
+  <div class="row" [ngStyle]="styles">
+      I am BIG
+  </div> -->
+
+
+  <!-- <div class="row">
+    <div *ngIf="show;then thenother else other">
+      Hello i am a div.
+    </div>
+
+    <ng-template #thenother>
+        <div>Then block</div>
+    </ng-template>
+
+    <ng-template #other>
+      <div>Sorry, nothing here</div>
+    </ng-template>
+
+    <div [hidden]="show">
+        SHOW THIS IS "SHOW" IS TRUE
+    </div>
+  </div> -->
+
+
+  <!-- <div class="row">
+    <app-life
+      *ngIf="show"
+      [artist]="artist"
+    ></app-life>
+
+    <div class="col-xs-12">
+      <button class="btn btn-primary" (click)="changeArtist()">
+        Change
+      </button>
+    </div>
+  </div> -->
+
+</div>

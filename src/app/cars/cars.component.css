@@ -1,0 +1,12 @@
+h2 { color: red}
+
+.item {
+  background: #f4f4f4;
+  padding: 20px 0;
+  margin-bottom: 10px;
+}
+
+.tag span {
+  color:#00BCD4;
+  font-weight: 700;
+}
