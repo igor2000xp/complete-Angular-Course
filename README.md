@@ -2,6 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
 
+## Links
+
+[GitHub](https://github.com/igor2000xp/complete-Angular-Course)
+
+[StackBlitz](https://stackblitz.com/~/github.com/igor2000xp/complete-Angular-Course)
+
+[Course](https://www.udemy.com/course/the-complete-angular-course-typescript-included/)
+
+**_/Volumes/MacUss/Users/\_\_louvre/mentoring-Poland/My-study-projects/StackBlitz/complete-Angular-Course/01-first-install_**
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
